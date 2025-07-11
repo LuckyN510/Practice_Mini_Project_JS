@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+.wrapper .image {
+    width: 22%;
+    height: 200px;
+    margin: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.wrapper .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+}
+
+.wrapper .image:hover img {
+    transform: scale(1.2);
+}
+
+.gallery {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.6;
+}
+
+.gallery .gallery_inner {
+    height: 70%;
+    width: 70%;
+}
+
+.gallery .gallery_inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.gallery .gallery_close {
+    position: fixed;
+    top: 15px;
+    right: 10px;
+    font-size: 40px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.gallery .control {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.8);
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.gallery .control i {
+    font-size: 100px; /* Hoặc bất kỳ giá trị nào bạn muốn */
+}
+.prev {
+  left: 15px;
+}
+
+.right {
+  right: 15px;
+}
+
+.gallery.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+}
+
+.hide{
+    display: none;
+}
