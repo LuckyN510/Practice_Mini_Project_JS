@@ -14,11 +14,9 @@ function renderTags() {
         content.appendChild(li);
     });
 
-    // ✅ Append input at the end
     content.appendChild(input);
     input.focus();
 
-    // ✅ Add click event to each remove icon
     document.querySelectorAll('.bx-x').forEach(icon => {
         icon.addEventListener('click', function () {
             const index = this.getAttribute('data-index');
