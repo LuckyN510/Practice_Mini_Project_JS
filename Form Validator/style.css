@@ -97,9 +97,12 @@ body {
     transition: 0.5s;
 }
 
-.btn-submit:hover{
-    background-color: #08609a;
+.btn-submit:hover {
+    background: linear-gradient(135deg, #005bea, #00c6fb);
+    box-shadow: 0 0 10px rgba(0, 119, 182, 0.5);
+    transform: scale(1.05);
 }
+
 .signup_link {
 	margin: 25px 0;
 	text-align: center;
