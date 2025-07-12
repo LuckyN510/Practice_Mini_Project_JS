@@ -3,6 +3,7 @@
 :root {
     --success-color: #2691d9;
     --error-color: #e74c3c;
+    --bg-color: linear-gradient(135deg, #8cc84c 0%, #2691d9 100%);
 }
 
 * {
@@ -17,6 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background: var(--bg-color);
 }
 
 .container {
@@ -28,6 +30,7 @@ body {
     align-items: center;
     padding: 20px 10px 10px 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffff;
 }
 
 .container h1 {
@@ -86,7 +89,7 @@ body {
     border: none;
     outline: none;
     color: #ffff;
-    background-color: #2691d9;
+    background: var(--bg-color);
     font-size: 17px;
     font-weight: 600;
     margin: 20px;
