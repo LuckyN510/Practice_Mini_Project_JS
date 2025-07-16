@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 420px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.form {
+    padding: 20px;
+    display: flex;
+    gap: 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.form input {
+    flex: 1;
+    height: 45px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.form input:focus {
+    border-color: #00c6ff;
+    box-shadow: 0 0 5px rgba(0, 198, 255, 0.3);
+}
+
+.form button {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    font-size: 16px;
+    padding: 0 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form button:hover {
+    opacity: 0.9;
+}
+
+.todos li {
+    border-top: 1px solid #f0f0f0;
+    font-size: 18px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: background-color 0.2s;
+}
+
+.todos li:hover {
+    background-color: #f9f9f9;
+}
+
+.todos li i {
+    color: #ccc;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.todos li:hover i {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.todos li span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 10px;
+    flex: 1;
+}
+
+.todos li.completed span {
+    color: #999;
+    text-decoration: line-through;
+}
